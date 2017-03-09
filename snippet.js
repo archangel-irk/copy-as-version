@@ -1,14 +1,15 @@
-// Just for information of this snippet.
-var ASCopyVersion = '1.1.0';
+// Just for information.
+var versionASCopy = '1.1.1';
 
-
-// TESTED ON BROWSERS:
-// * Chrome 56.0.2924.87
-// * Firefox 52.0 - Use Scratchpad in devtools.
-//                  Copying from scratchpad doesn't work, use generated button after versions table.
-// * Safari 10.0.3 - Just run snippet from console.
-
-
+// Example:
+// ||Component||Version||Date||
+// |UI|2.1.0-34-gb4d27a6|2017-03-06T10:03:51±10|
+// |appservices|2.1.0-start-298-g01ddc8|2017-03-06T16:50:05.816-0500|
+// |authservice|1.1.0-start-126-gcf045e|2017-02-28T11:15:04.436-0500|
+// |discountservice|1.1.0-start-126-gcf045e|2017-02-28T11:16:44.286-0500|
+// |notificationservice|1.1.0-start-126-gcf045e|2017-02-28T11:15:32.974-0500|
+// |profileservice|1.1.0-start-126-gcf045e|2017-02-28T11:16:00.802-0500|
+// |roleservice|1.1.0-start-126-gcf045e|2017-02-28T11:16:24.693-0500|
 
 // Clear previous elements
 var logs = document.querySelectorAll('._clipboard_log_');
@@ -68,20 +69,13 @@ if (md != '') {
     copyToClipboard(md);
   });
 
-  copy(md);
-  console.log(md);
-  console.log('Copied to clipboard!');
-  log("Copied to clipboard!");
+  if (window.copy) {
+    copy(md);
+    console.log(md);
+    console.log('Copied to clipboard!');
+    log("Copied to clipboard!");
+  }
 }
-
-// ||Component||Version||Date||
-// |UI|2.1.0-34-gb4d27a6|2017-03-06T10:03:51±10|
-// |appservices|2.1.0-start-298-g01ddc8|2017-03-06T16:50:05.816-0500|
-// |authservice|1.1.0-start-126-gcf045e|2017-02-28T11:15:04.436-0500|
-// |discountservice|1.1.0-start-126-gcf045e|2017-02-28T11:16:44.286-0500|
-// |notificationservice|1.1.0-start-126-gcf045e|2017-02-28T11:15:32.974-0500|
-// |profileservice|1.1.0-start-126-gcf045e|2017-02-28T11:16:00.802-0500|
-// |roleservice|1.1.0-start-126-gcf045e|2017-02-28T11:16:24.693-0500|
 
 function copyToClipboard(text){
   var textarea = document.createElement("textarea");
