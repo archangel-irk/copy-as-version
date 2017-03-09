@@ -10,4 +10,4 @@ See bokmarklet version.
 * Firefox 52.0 - Use Scratchpad in devtools. Copying from scratchpad doesn't work, use generated button after versions table.
 * Safari 10.0.3 - Just run snippet from console.
 
-See [CHANGELOG](https://github.com/archangel-irk/copy-as-version/blob/master/CHANGELOG.md).
+See [CHANGELOG](./CHANGELOG.md).
