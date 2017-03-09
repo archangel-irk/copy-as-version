@@ -3,7 +3,7 @@ Copy AS version table to markdown with snippet and bookmarklet.
 Useful for creating Jira tickets or comments.
 
 See [snippet](./snippet.js) version for devtools.  
-See [bokmarklet](./bookmarklet.js) version.
+See [bokmarklet](./bookmarklet.js) version (minifying by https://babeljs.io/repl).
 
 ### Browsers:
 * Chrome 56.0.2924.87
