@@ -1,5 +1,6 @@
 # Copy AS version table
 Copy AS version table to markdown with snippet and bookmarklet.
+
 Useful for creating Jira tickets or comments.
 
 See [snippet](./snippet.js) version for devtools.
