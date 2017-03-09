@@ -1,9 +1,9 @@
 # Copy AS version table
 Copy AS version table to markdown with snippet and bookmarklet
 
-See snippet version for devtools.
+See [snippet](./snippet.js) version for devtools.
 
-See bokmarklet version.
+See [bokmarklet](./bookmarklet.js) version.
 
 ### Browsers:
 * Chrome 56.0.2924.87
