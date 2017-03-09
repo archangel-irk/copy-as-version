@@ -9,14 +9,6 @@ var ASCopyVersion = '1.1.0';
 // * Safari 10.0.3 - Just run snippet from console.
 
 
-// CHANGELOG
-// 1.1.0 (March 7, 2017)
-// * Added: usage `copy` method from chrome devtools api.
-//
-// 1.0.0 (March 7, 2017)
-// * First version (added main functionality, button, logs).
-
-
 
 // Clear previous elements
 var logs = document.querySelectorAll('._clipboard_log_');
